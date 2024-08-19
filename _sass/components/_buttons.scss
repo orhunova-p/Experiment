@@ -1,0 +1,27 @@
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: #501214;
+  border-color: #501214;
+  color: $primary;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken(#501214, 7.5%) !important;
+    border-color: darken(#501214, 7.5%) !important;
+    color: $primary;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem #501214 !important;
+  }
+}
